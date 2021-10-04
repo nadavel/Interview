@@ -64,7 +64,7 @@ public class OS_No_Counters {
                 //if there's not enough room in the queue to insert job
                 //we add empty lists of jobs and finally add this job to the correct list.
                 if (size-ms<0) {
-                    int i = (int)size;
+                    long i = size;
                     for (; i <ms; i++) {
                         sleepQueue.addLast(new LinkedList<Job>());
                     }
