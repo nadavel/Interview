@@ -33,8 +33,11 @@ public class Better_OS {
         sleepQueue.addLast(sleep);
         //if an entry has a key equal to sleep, it's time to move it to ready queue
         Object head = sleepQueue.peekFirst();
-        if (head ==sleepQueue.peekLast())
+        if (head ==sleepQueue.peekLast()) {
+            sleepQueue.removeLast();
+            sleepQueue.addLast((long) 0);
             return;
+        }
         else {
             LinkedList<Object> temp = (LinkedList<Object>) head;
             if ((Long) temp.peekFirst()==sleep) {
