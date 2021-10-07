@@ -12,7 +12,7 @@ public class OS_No_Counters {
         }
 
         public static void main(String[] args) {
-
+*/
         //section for testing
         //create jobs
         Random r = new Random();
@@ -24,7 +24,7 @@ public class OS_No_Counters {
         //this will be scheduled by OS, loop is just for testing functionality.
         for(int i=0;i<1000;i++)
             awake();
-
+*/
         }
 
         //awake function belongs to OS class
