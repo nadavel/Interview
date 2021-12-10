@@ -1,0 +1,10 @@
+The goal of this question is to write two functions for the OS
+
+1. sleep(long ms) - will add the job it acts upon to a sleep queue for the specified amount of time
+2. awake() - this method will be scheduled by the OS to run every 1 ms. it will check the sleep queue and if it finds jobs that finishe their sleep
+it will move them to the ready queue for the OS to schedule.
+
+Question constraints:
+1. it is not allowed to use any sort of counter to track the sleep duration.
+2. it is not allowed to use any Date/Time related classes or methods like system time, a timer etc.
+3. the awake function must run in O(1) time.
